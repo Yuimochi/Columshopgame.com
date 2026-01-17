@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Columshopgame</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+<body>
+<div class="bg-wrapper">
+    <img src="images/img.jpg" alt="background">
+</div>
+<header>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">COLUMBINA SHOP</div>
+    <ul class="menu">
+        <li><a href="../../index.html">Trang chủ</a></li>
+    <li class="dropdown">
+    <a href="#">Nạp tiền</a>
+    <div class="dropdown-menu">
+        <a href="../../nt/tc/thecao.html" class="item-normal">Nạp thẻ cào</a>
+        <a href="../../nt/momo/atm.html" class="item-highlight">Nạp MoMo</a>
+    </div>
+    </li>
+    <li class="dropdown">
+        <a href="#">Liên Hệ</a>
+            <div class="dropdown-menu">
+                <a href="https://zalo.me/84931545817" class="item-normal">Zalo</a>
+                <a href="https://www.facebook.com/columbina1401" class="item-highlight">Facebook</a>
+            </div>
+    </li>
+    <li>
+        <a href="../../taikhoan/weblogin.html">
+        <button class="btnLogin-popup">Login</button>
+        </a>
+    </li>
+    </ul>
+</nav>
+</header>
+<div class="ct-wrapper">
+    <h2>Cày Thuê HONKAI STAR RAIL  </h2>
+    <img class="img-fluid" src="images/AuthDevider.png">
+
+    <form class="ct-hsr">
+
+        <select class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="IDGoiNhiemVu" name="IDGoiNhiemVu">
+                                <option value="0">Chọn gói</option>
+                                    <option value="91">1.000.000 đ - Ae Có Nhu Cầu Cày Mà List Không Có Vui Lòng Liên Hệ Page Hỗ Trợ Khách Hàng Để Bên Shop Tư Vấn Nhé</option>
+                                    <option value="136">70.000 đ - Chăm Acc 1 tuần   ( Xả Năng Lương Khai Phá - Full Điểm Năng Động )(420 Ngọc Ánh Sao)</option>
+                                    <option value="137">300.000 đ - Chăm Acc 1 tháng ( Xả Năng Lương Khai Phá - Full Điểm Năng Động ) ( 1800 Ngọc Ánh Sao )</option>
+                                    <option value="138">60.000 đ - Vượt Vũ Trụ Mô Phỏng - Thế Giới 2 ( Độ khó 1 ) sau cày sẽ nhận 120 Ngọc Ánh Sao + 1 Nvat Herta </option>
+                                    <option value="139">100.000 đ - ,Vượt Vũ Trụ Mô Phỏng - Thế Giới 3  ( Độ khó 1 ) sau cày sẽ nhận  120 Ngọc Ánh Sao + 2 Vé Banner Thường </option>
+                                    <option value="140">150.000 đ - Vượt Vũ Trụ Mô Phỏng - Thế Giới 5  ( Độ khó 1 ) sau cày sẽ nhận 120 Ngọc Ánh Sao + 2 Vé Banner Thường + 2 Phiếu đổi</option>
+                                    <option value="141">170.000 đ - Vượt Vũ Trụ Mô Phỏng - Thế Giới 6 ( Độ khó 1 ) sau cày sẽ nhận 300 Ngọc Ánh Sao + 1 Nvat Herta + 2 vé Banner Thường</option>
+                                    <option value="142">170.000 đ - Vượt Vũ Trụ Mô Phỏng - Thế Giới 7 ( Độ khó 1 ) sau cày sẽ nhận 300 Ngọc Ánh Sao + 1 Nvat Herta </option>
+                                    <option value="143">170.000 đ - Vượt Vũ Trụ Mô Phỏng - Thế Giới 8 ( Độ khó 1 ) sau cày sẽ nhận 300 Ngọc Ánh Sao +  + 2 Vé Banner Thường</option>
+                                    <option value="144">350.000 đ - Farm Build Nhân Vật ( Chỉ số tốt )</option>
+                                    <option value="145">600.000 đ - Vũ Trụ Mô Phỏng Thảm họa Côn Trùng ( 13/13 Mốc + Mở Vận Mệnh Sinh Sôi Khoẻ nhất game + Các mốc nhận ngọc ánh sao ) </option>
+                                    <option value="146">600.000 đ - Vũ Trụ Mô Phỏng Vàng và Máy Móc (28/28 Mốc + Mở Vận Mệnh Tri Thức + Các mốc nhận ngọc ánh sao ) </option>
+                                    <option value="147">600.000 đ - Vũ Trụ Mô Phỏng Sai Phân ( 80 Cấp Đồng Bộ + Các mốc nhận ngọc ánh sao )</option>
+                            </select>
+        <input placeholder="Điền UID (User ID)" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="UID" required="" name="UID" type="text">
+        <input placeholder="Điền tên đăng nhập" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="TenDangNhap" required="" name="TenDangNhap" type="text">
+        <input placeholder="Điền mật khẩu tài khoản nạp" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="MatKhau" required="" name="MatKhau" type="text">
+        <input placeholder="Điền server" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="Server" required="" name="Server" type="text">
+        <input placeholder="Điền tên nhân vật" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="TenNhanVat" required="" name="TenNhanVat" type="text">
+        <input placeholder="Điền số điện thoại" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="SoDienThoai" required="" name="SoDienThoai" type="number">
+        <input placeholder="Điền ghi chú (nếu có)" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="GhiChu" name="GhiChu" type="text">
+        <button type="submit">Nạp ngay</button>
+    </form>
+</div>
+</body>
+</html>

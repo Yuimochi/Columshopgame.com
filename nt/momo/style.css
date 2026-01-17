@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  padding-top:110px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 70px;
+  z-index: 10000;
+  display: fixed;
+  align-items: center;
+}
+
+.bg-wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.bg-wrapper img {
+    image-rendering: auto;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+    background: #0c0b09;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: auto;
+}
+
+/* NAVBAR */
+.navbar {
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 1000;
+
+}
+
+.navbar .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navbar .btnLogin-popup:hover {
+background: #fff;
+color: #162938;
+}
+
+
+.logo {
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 18px 22px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+
+.menu a:hover {
+    color: #ffd700;
+}
+/* dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* dropdown box */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border-radius: 10px;
+    min-width: 180px;
+    padding: 8px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+    /* animation */
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: 0.25s ease;
+    z-index: 9999;
+}
+
+/* show on hover */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* item chung */
+.dropdown-menu a {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+/* item thường */
+.item-normal {
+    color: #333;
+}
+
+/* item nổi bật (màu cam/vàng) */
+.item-highlight {
+    color: #e0a44c;
+}
+
+/* hover effect */
+.dropdown-menu a:hover {
+    background: #f5f5f5;
+}
+
+
+/* BANNER */
+.banner {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.banner h1 {
+    font-size: 42px;
+    color: #ffd700;
+}
+
+.banner p {
+    margin: 12px 0 20px;
+    color: #ccc;
+}
+
+.btn {
+    background: #ffd700;
+    color: #000;
+    padding: 12px 26px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #ffea70;
+}
+
+/* CONTENT */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 28px;
+    background: #ffd700;
+}
+
+.acc-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.acc-card {
+    background: #1a1a1a;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.acc-card:hover {
+    transform: translateY(-8px);
+}
+
+.acc-img {
+    height: 150px;
+    background: #333;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+}
+
+.acc-card h3 {
+    color: #ffd700;
+    margin-bottom: 8px;
+}
+
+.acc-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.price {
+    display: block;
+    margin: 12px 0;
+    font-size: 18px;
+    color: #ff5252;
+    font-weight: bold;
+}
+
+.buy-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #ffd700;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.buy-btn:hover {
+    background: #ffea70;
+}
+
+/* INFO */
+.info {
+    background: #000;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.info-box h3 {
+    color: #ffd700;
+    margin-bottom: 8px;
+}
+
+.info-box p {
+    color: #aaa;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* Khung ATM */
+.atm-box {
+    max-width: 520px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(180deg, #f8e1c2, #f3cfa1);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+}
+
+/* Tiêu đề */
+.atm-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #6b4a2b;
+    margin-bottom: 20px;
+}
+
+/* QR */
+.qr-box img {
+    width: 280px;
+    max-width: 100%;
+    border-radius: 16px;
+    background: #fff;
+    padding: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* Mô tả */
+.atm-desc {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Thông tin */
+.atm-info {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: black;
+}
+
+.atm-info div {
+    margin-bottom: 10px;
+}
+
+/* Nút sao chép */
+.atm-info button {
+    margin-left: 8px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: none;
+    background: #ffcc00;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Lưu ý */
+.atm-note {
+    margin-top: 20px;
+    padding: 14px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+/* Ẩn scrollbar cho Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ẩn scrollbar cho Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* Không cho tràn ngang */
+body {
+    overflow-x: hidden;
+}
+
+.text-sm {
+    margin-top: 10px;
+}
+
+.atm-note {
+    color: black;
+}

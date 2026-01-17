@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  padding-top: 70px;
+}
+
+
+.bg-wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.bg-wrapper img {
+    image-rendering: auto;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+    background: #0c0b09;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 70px;
+  z-index: 10000;
+  display: fixed;
+  align-items: center;
+}
+
+
+/* NAVBAR */
+.navbar {
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    min-height: 64px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 1000;
+
+}
+
+.navbar .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navbar .btnLogin-popup:hover {
+background: #fff;
+color: #162938;
+}
+
+.logo {
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 18px 22px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+
+.menu a:hover {
+    color: #ffd700;
+}
+/* dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* dropdown box */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border-radius: 10px;
+    min-width: 180px;
+    padding: 8px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+    /* animation */
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: 0.25s ease;
+    z-index: 9999;
+}
+
+/* show on hover */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* item chung */
+.dropdown-menu a {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+/* item thường */
+.item-normal {
+    color: #333;
+}
+
+/* item nổi bật (màu cam/vàng) */
+.item-highlight {
+    color: #e0a44c;
+}
+
+/* hover effect */
+.dropdown-menu a:hover {
+    background: #f5f5f5;
+}
+
+
+/* NAVBAR */
+.navbar {
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    min-height: 64px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 1000;
+
+}
+
+.navbar .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navbar .btnLogin-popup:hover {
+background: #fff;
+color: #162938;
+}
+
+.logo {
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 18px 22px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+
+.menu a:hover {
+    color: #ffd700;
+}
+/* dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* dropdown box */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border-radius: 10px;
+    min-width: 180px;
+    padding: 8px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+    /* animation */
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: 0.25s ease;
+    z-index: 9999;
+}
+
+/* show on hover */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* item chung */
+.dropdown-menu a {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+/* item thường */
+.item-normal {
+    color: #333;
+}
+
+/* item nổi bật (màu cam/vàng) */
+.item-highlight {
+    color: #e0a44c;
+}
+
+/* hover effect */
+.dropdown-menu a:hover {
+    background: #f5f5f5;
+}
+
+
+/* BANNER */
+.banner {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.banner h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow:
+    0 0 10px rgba(0, 180, 255, 0.8),
+    0 0 20px rgba(0, 180, 255, 0.6),
+    0 0 40px rgba(0, 180, 255, 0.4);
+}
+
+.banner p,b {
+    font-size: 25px;
+    margin: 12px 0 20px;
+    color: black;
+}
+
+.btn {
+    background: #ffd700;
+    color: #000;
+    padding: 12px 26px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.btn:hover {
+    background: #ffea70;
+}
+
+/* CONTENT */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 28px;
+    background: #ffd700;
+}
+
+
+
+
+
+.acc-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 27px;
+}
+
+.acc-card {
+    background: linear-gradient(
+    180deg,
+    rgba(90, 70, 140, 0.95) 0%,
+    rgba(70, 55, 120, 0.92) 40%,
+    rgba(55, 45, 100, 0.9) 70%,
+    rgba(40, 35, 85, 0.95) 100%);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 1px rgba(255,255,255,0.05);
+    backdrop-filter: blur(8px);
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.acc-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(120, 160, 255, 0.25),
+    rgba(120, 160, 255, 0)
+  );
+  pointer-events: none;
+}
+
+.acc-card:hover {
+    transform: translateY(-8px);
+}
+
+.acc-img {
+    height: 190px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tokenImage {
+    height: 170px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transform: translateY(10px);
+}
+
+.acc-card h3 {
+    color: #ffd700;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.acc-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.price {
+    display: block;
+    margin: 12px 0;
+    font-size: 18px;
+    color: #ff5252;
+    font-weight: bold;
+}
+
+.buy-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #ffd700;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.buy-btn:hover {
+    background: #ffea70;
+}
+
+/* INFO */
+.info {
+    background: #000;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.info-box h3 {
+    color: #ffd700;
+    margin-bottom: 8px;
+}
+
+.info-box p {
+    color: #aaa;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow:
+    0 0 10px rgba(0, 180, 255, 0.8),
+    0 0 20px rgba(0, 180, 255, 0.6),
+    0 0 40px rgba(0, 180, 255, 0.4);
+    transform: translateY(-30px);
+}
+
+.tokenInfo, .duration {
+    display: flex;          /* 👉 nằm ngang */
+    align-items: center;    /* 👉 canh giữa theo chiều dọc */
+    gap: 12px;              /* 👉 khoảng cách giữa 2 div */
+}

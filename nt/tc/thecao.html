@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Columshopgame</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="bg-wrapper">
+    <img src="images/img.jpg" alt="background">
+</div>
+<header>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">COLUMBINA SHOP</div>
+    <ul class="menu">
+        <li>
+    <a href="../../index.html" class="btn-home">Trang chủ</a>
+
+</li>
+
+    <li class="dropdown">
+    <a href="#">Nạp tiền</a>
+    <div class="dropdown-menu">
+        <a href="#" class="item-normal">Nạp thẻ cào</a>
+        <a href="../momo/atm.html" class="item-highlight">Nạp MoMo</a>
+    </div>
+    </li>
+    <li class="dropdown">
+    <a href="#">Liên Hệ</a>
+            <div class="dropdown-menu">
+                <a href="https://zalo.me/84931545817" class="item-normal">Zalo</a>
+                <a href="https://www.facebook.com/columbina1401" class="item-highlight">Facebook</a>
+            </div>
+    </li>
+    <li>
+        <a href="../../taikhoan/weblogin.html">
+        <button class="btnLogin-popup" >Login</button>
+        </a>
+    </li>
+    </ul>
+</nav>
+</header>
+<div class="d-flex align-items-center justify-content-center mh-100">
+            <div class="w-100" style="">
+<div class="napthe-wrapper">
+    <div class="napthe-box text-center form-dangky shadow-lg">
+                    <form action="/napthecao/thecao" class="border-dangky" enctype="multipart/form-data" method="post">
+                        <div class="pb-3">
+                            <h2 class="text-center text-uppercase d-block pt-5 pb-2 fw-bold" style="color: #726550">
+                                Nạp tiền bằng thẻ cào
+                            </h2>
+                        </div>
+                        <div class="alert alert-danger text-dark mt-4" role="alert">
+                            <p class="mb-1"><b>Lưu ý:</b></p>
+                            <p class="mb-0">- Cần điền đúng seri, điền sai khiếu nại sẽ không xử lý.</p>
+                            <p class="mb-0">- Nạp thẻ cào sẽ nhận được 80% giá trị thẻ.</p>
+                            <p class="mb-0">- Sai mệnh giá -70% giá trị thẻ.</p>
+                            <p class="mb-0">- Nếu đợi lâu không thấy thẻ được duyệt, vui lòng nhấn "Kiểm tra" để load trạng thái thẻ</p>
+                        </div>
+                        <div class="py-2 py-sm-3">
+                            <select class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="telco" name="telco">
+                                <option value="0" selected="">CHỌN LOẠI THẺ</option>
+                                <option value="VIETTEL">VIETTEL</option>
+                                <option value="VINAPHONE">VINAPHONE</option>
+                                <option value="MOBIFONE">MOBIFONE</option>
+                                <option value="ZING">ZING</option>
+                                <option value="GARENA2">GARENA</option>
+                            </select>
+                        </div>
+                        <div class="py-2 py-sm-3">
+                            <input placeholder="Mã thẻ" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="code" required="" name="code" type="text">
+                        </div>
+                        <div class="py-2 py-sm-3">
+                            <input placeholder="Seri thẻ" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="serial" required="" name="serial" type="text">
+                        </div>
+                        <div class="py-2 py-sm-3">
+                            <select required="" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" aria-label=".form-select-lg example" id="amount" name="amount">
+                                <option value="0" selected="">Chọn giá trị thẻ</option>
+                                <option value="10000">10.000 VNĐ</option>
+                                <option value="20000">20.000 VNĐ</option>
+                                <option value="30000">30.000 VNĐ</option>
+                                <option value="50000">50.000 VNĐ</option>
+                                <option value="100000">100.000 VNĐ</option>
+                                <option value="200000">200.000 VNĐ</option>
+                                <option value="300000">300.000 VNĐ</option>
+                                <option value="500000">500.000 VNĐ</option>
+                                <option value="1000000">1.000.000 VNĐ</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-12">
+                                <button type="submit" class="col-lg-4 col-sm-9 col-12 btn position-relative shadow-none text-center mt-3">
+
+                                    <span class="">Nạp ngay</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

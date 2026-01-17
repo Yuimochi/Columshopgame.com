@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Columshopgame</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+<body>
+<div class="bg-wrapper">
+    <img src="images/img.jpg" alt="background">
+</div>
+<header>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">COLUMBINA SHOP</div>
+    <ul class="menu">
+        <li><a href="../../index.html">Trang chủ</a></li>
+    <li class="dropdown">
+    <a href="#">Nạp tiền</a>
+    <div class="dropdown-menu">
+        <a href="../../nt/tc/thecao.html" class="item-normal">Nạp thẻ cào</a>
+        <a href="../../nt/momo/atm.html" class="item-highlight">Nạp MoMo</a>
+    </div>
+    </li>
+    <li class="dropdown">
+        <a href="#">Liên Hệ</a>
+            <div class="dropdown-menu">
+                <a href="https://zalo.me/84931545817" class="item-normal">Zalo</a>
+                <a href="https://www.facebook.com/columbina1401" class="item-highlight">Facebook</a>
+            </div>
+    </li>
+    <li>
+        <a href="../../taikhoan/weblogin.html">
+        <button class="btnLogin-popup">Login</button>
+        </a>
+    </li>
+    </ul>
+</nav>
+</header>
+<div class="nap-wrapper">
+    <h2>NẠP HONKAI STAR RAIL  </h2>
+    <img class="img-fluid" src="images/AuthDevider.png">
+
+    <form class="nap-hsr">
+
+        <select class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="IDGoiNap" name="IDGoiNap">
+                                <option value="0">Chọn gói</option>
+                                    <option value="65">100.000 đ - Chứng Nhận Tiếp Tế Đội Tàu ( Thẻ Tháng )</option>
+                                    <option value="66">20.000 đ - 60 Mộng Ước Viễn Cổ</option>
+                                    <option value="67">100.000 đ - 300 + 30 Mộng Ước Viễn Cổ</option>
+                                    <option value="68">300.000 đ - 980 + 110 Mộng Ước Viễn Cổ</option>
+                                    <option value="69">600.000 đ - 1980 + 260 Mộng Ước Viễn Cổ</option>
+                                    <option value="70">1.000.000 đ - 3280 + 600 Mộng Ước Viễn Cổ</option>
+                                    <option value="71">1.950.000 đ - 6480 + 1600 Mộng Ước Viễn Cổ</option>
+                                    <option value="72">210.000 đ - Vinh Quang Khách Vô Danh</option>
+                                    <option value="73">420.000 đ - Huân Chương Khách Vô Danh</option>
+                                    <option value="185">200.000 đ - X2 Chứng Nhận Tiếp Tế Đội Tàu ( X2 Thẻ Tháng )</option>
+                                    <option value="186">500.000 đ - X5 Chứng Nhận Tiếp Tế Đội Tàu ( X5 Thẻ Tháng )</option>
+                            </select>
+        <input placeholder="Điền UID (User ID)" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="UID" required="" name="UID" type="text">
+        <input placeholder="Điền tên đăng nhập" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="TenDangNhap" required="" name="TenDangNhap" type="text">
+        <input placeholder="Điền mật khẩu tài khoản nạp" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="MatKhau" required="" name="MatKhau" type="text">
+        <input placeholder="Điền server" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="Server" required="" name="Server" type="text">
+        <input placeholder="Điền tên nhân vật" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="TenNhanVat" required="" name="TenNhanVat" type="text">
+        <input placeholder="Điền số điện thoại" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="SoDienThoai" required="" name="SoDienThoai" type="number">
+        <input placeholder="Điền ghi chú (nếu có)" class="form-control login-input rounded-3 p-3 p-sm-3 p-md-4 fw-bold fs-6" id="GhiChu" name="GhiChu" type="text">
+        <button type="submit">Nạp ngay</button>
+    </form>
+</div>
+</body>
+</html>
